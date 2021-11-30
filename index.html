@@ -3,17 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
-
+    <!-- favicon -->
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
-
     <title>Frontend Mentor | Tip calculator app</title>
-
     <!-- Google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -21,15 +18,17 @@
       href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,700;1,400&display=swap"
       rel="stylesheet"
     />
-    <!-- JQUERY -->
-    <!-- <link rel="stylesheet" type="text/css" href="styles.css" /> -->
+    <!-- jquery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
-    <!-- Javascript -->
+    <!-- css -->
     <link rel="stylesheet" href="styles.css" />
   </head>
 
   <body>
+    <h1>
+      SPLI <br />
+      TTER
+    </h1>
     <div class="divwrapper">
       <div class="billSection">
         <h6>Bill</h6>
@@ -41,17 +40,24 @@
         />
         <input id="billAmount" class="billAmountBlock" type="number" value="" />
 
-        <h6>Select Tip %</h6>
+        <h6 class="selectTipTitle">Select Tip %</h6>
         <div class="selectTipSection">
           <button id="fivePercentBtn" class="tip firstRow">5%</button>
           <button id="twentyFivePercentBtn" class="tip">25%</button>
           <button id="tenPercentBtn" class="tip firstRow">10%</button>
           <button id="fiftyPercentBtn" class="tip">50%</button>
           <button id="fifteenPercentBtn" class="tip firstRow">15%</button>
-          <button id="customBtn" class="tip">Custom</button>
+          <input
+            id="customInput"
+            class="tip custom"
+            type="number"
+            placeholder="Custom"
+          />
         </div>
+
         <div class="noOfPeopleSection">
           <h6>Number of People</h6>
+          <div id="notZeroText"></div>
           <img
             id="personIcon"
             class="personIcon"
@@ -84,9 +90,9 @@
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
-      >. Coded by <a href="#">Wolfgang</a>.
+      >. Coded by <a href="https://github.com/Wolfmuller">WolfMuller</a>.
     </div>
-
+    <!-- javascript -->
     <script src="js.js"></script>
   </body>
 </html>

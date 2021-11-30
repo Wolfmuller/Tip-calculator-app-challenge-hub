@@ -1,5 +1,3 @@
-/* Useful link: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Aligning_Items_in_a_Flex_Container 
-https://www.freecodecamp.org/news/use-svg-images-in-css-html/*/
 * {
   margin: 0;
   padding: 0;
@@ -10,6 +8,14 @@ body {
   background-color: hsl(185, 41%, 84%);
 }
 
+h1 {
+  color: hsl(183, 100%, 15%);
+  text-align: center;
+  letter-spacing: 0.5rem;
+  font-size: larger;
+  padding-top: 100px;
+}
+
 h6 {
   color: hsl(184, 14%, 56%);
 }
@@ -18,14 +24,12 @@ h6 {
   position: relative;
   padding: 1rem;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(20rem, 2fr));
-
+  grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
   gap: 1rem;
   background-color: white;
   border-radius: 1rem;
   max-width: 50%;
   min-width: min-content;
-  /* above means that when screen gets smaller, it will not get smaller than the content */
   margin: auto;
   margin-top: 5rem;
 }
@@ -43,22 +47,8 @@ h6 {
   background-color: hsl(189, 41%, 97%);
   border-radius: 0.3rem;
   border: none;
+  cursor: pointer;
 }
-/* input {
-  position: absolute;
-  right: 20px;
-} */
-/* input[value=""] {
-  position: absolute;
-  right: 210px;
-} */
-/* input[type="number"] {
-  /* Awesome styling */
-
-/* #billAmount {
-  display: flex;
-  justify-content: flex-end;
-} */
 
 .dollarIcon {
   position: absolute;
@@ -71,37 +61,66 @@ h6 {
   align-self: center;
   margin-left: 1rem;
 }
+
+.selectTipTitle {
+  padding-top: 2rem;
+}
+
 .selectTipSection {
   flex-direction: column;
   display: flex;
   flex-wrap: wrap;
   height: 150px;
   align-content: space-between;
-  flex-direction: column;
+  padding-top: 1rem;
 }
 
 .tip {
-  width: 100px;
+  width: 90px;
   height: 42px;
   margin: 5px;
   text-align: center;
-  /* align-content: center */
   display: inline-block;
   background-color: hsl(183, 100%, 15%);
   color: hsl(0, 0%, 100%);
   font-size: 18px;
   border-radius: 0.3rem;
   border: none;
+  cursor: pointer;
 }
 
-#customBtn {
+#customInput {
   background-color: hsl(189, 41%, 97%);
-  color: hsl(184, 14%, 56%);
+  color: hsl(183, 100%, 15%);
+}
+
+@media (max-width: 1119px) {
+  #notZeroText {
+    display: grid;
+    color: red;
+    position: absolute;
+    bottom: 435px;
+    right: 20px;
+    font-size: smaller;
+  }
+}
+
+@media (min-width: 1120px) {
+  #notZeroText {
+    display: grid;
+    color: red;
+    bottom: 100px;
+    left: 180px;
+    position: absolute;
+    font-size: smaller;
+  }
 }
 
 .tip:hover {
   background-color: hsl(172, 67%, 45%);
+  color: hsl(183, 100%, 15%);
 }
+
 .noOfPeopleBlock {
   display: grid;
   width: 100%;
@@ -109,20 +128,35 @@ h6 {
   background-color: hsl(189, 41%, 97%);
   border-radius: 0.3rem;
   border: none;
+  cursor: pointer;
+}
+
+#noOfPeople,
+#billAmount {
+  font-size: 18px;
+  color: hsl(183, 100%, 15%);
 }
 
 .personIcon {
+  display: grid;
   position: absolute;
-  bottom: 68px;
+  bottom: 55px;
   left: 25px;
   width: 10px;
-  /* align-self: center;
-  margin-left: 1rem; */
+}
+
+@media (max-width: 1119px) {
+  .personIcon {
+    display: grid;
+    position: absolute;
+    top: 320px;
+    left: 25px;
+    width: 10px;
+  }
 }
 
 .rightContent {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
   padding: 2rem;
   height: 18rem;
   background-color: hsl(183, 100%, 15%);
@@ -132,17 +166,35 @@ h6 {
 
 .tipAmountPerPerson {
   position: absolute;
-  right: 55px;
-  top: 32px;
-  font-size: 38px;
+  right: 35px;
+  top: 45px;
+  font-size: 28px;
   color: hsl(172, 67%, 45%);
 }
+
 .totalAmountPerPerson {
   position: absolute;
-  right: 55px;
-  top: 108px;
-  font-size: 38px;
+  right: 35px;
+  top: 115px;
+  font-size: 28px;
   color: hsl(172, 67%, 45%);
+}
+
+@media (max-width: 1183px) {
+  .tipAmountPerPerson {
+    position: absolute;
+    right: 45px;
+    top: 400px;
+    font-size: 25px;
+  }
+
+  .totalAmountPerPerson {
+    position: absolute;
+    right: 45px;
+    top: 470px;
+    font-size: 25px;
+    color: hsl(172, 67%, 45%);
+  }
 }
 
 .reset {
@@ -152,6 +204,7 @@ h6 {
   align-items: center;
   margin-top: 5rem;
   border-radius: 0.3rem;
+  cursor: pointer;
 }
 
 .resetBtn {
@@ -161,7 +214,19 @@ h6 {
 .attribution {
   font-size: 11px;
   text-align: center;
+  margin-bottom: 5rem;
 }
+
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input:focus {
+  outline-color: hsl(172, 67%, 45%);
 }

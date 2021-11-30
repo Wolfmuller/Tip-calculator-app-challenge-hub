@@ -27,13 +27,14 @@ Users should be able to:
 
 ### Screenshot
 
-Screenshot of a fifteen percent tip
+Screenshot of a fifteen percent tip selection
 
-![Fifteen Percent tip](Desktop/WebDevelopment/FrontendMentor/TipCalculator/screenshotfifteenpercent)
+![screenshotfifteenpercent](https://user-images.githubusercontent.com/82453818/144024975-311fb68e-0bac-4b54-9007-6df350893e61.png)
 
-Screenshot of a custom tip
+Screenshot of a custom tip selection
 
-![Custom tip](Desktop/WebDevelopment/FrontendMentor/TipCalculator/screenshotcustombtn)
+![screenshotcustombtn](https://user-images.githubusercontent.com/82453818/144025001-acde26cb-3d78-4006-a68a-4ef0fa642211.png)
+
 
 ### Links
 

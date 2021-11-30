@@ -55,8 +55,8 @@ Screenshot of a custom tip selection
 
 - This was a good opportunity to practice css grid and flexbox.
 - I also practised making the app responsive, which still needs a bit of ironing out. I made some headway using @media for the first time.
-- It's the first time i included a svg into an output.
-- It was good and challenging practising javascript and getting to app to function. 
+- It's the first time I included a svg into an input.
+- It was good and challenging practising javascript and getting this app to function. 
 
 
 See my code snippets:
@@ -107,9 +107,9 @@ const eachPersTotal = function (billAmount, noOfPeople, fivePercent) {
 
 I'm still facing a few challenges:
 
-- I'm struggling to align the inputs for 'Bill' and 'Number of People' to the far righthand side of the input as shown in the completed app reference pics.
-- The app is not completely responsive: the right hand side collapses under the tip button's too quickly when making the screen size smaller. Also in mobile size there is a row of three tip buttons, instead of only two. If anyone could share some pointers on how to improve this I would be very grateful.
-- Also i'd like a clearer understanding of best way to use div's in the html? I'm aware that it's best to put everything in a div wrapper. But should (to use this example) the left content and right content of this calc app be in their own div wrappers? Also the inputs with the svg's shoule be in their own div's, right? What the best way to approach using div's? any advice would be greatly appreciated.
+- I'm struggling to align the inputs for 'Bill' and 'Number of People' to the far righthand side of the input as shown in the completed app.
+- The app is not completely responsive: the right hand side collapses under the tip buttons too quickly when making the screen size smaller. Also in mobile size there is a row of three tip buttons, instead of only two. If anyone could share some pointers on how to correct this I would be very grateful.
+- Also i'd like a clearer understanding of best way to use div's in the html? I'm aware that it's best to put everything in a div wrapper. But should (to use this example) the left content and right content of this calc app be in their own div wrappers? What the best way to approach using div's? any advice would be greatly appreciated.
 Finally how can i make my javascript more dry and still have it fucntion?
 
 ### Useful resources

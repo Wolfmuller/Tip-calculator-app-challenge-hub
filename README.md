@@ -38,7 +38,7 @@ Screenshot of a custom tip selection
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [Add solution URL here](https://github.com/Wolfmuller/Tip-calculator-app-challenge-hub)
 - Live Site URL: [Add live site URL here](https://your-live-site-url.com)
 
 ## My process
